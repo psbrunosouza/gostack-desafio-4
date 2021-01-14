@@ -60,7 +60,7 @@ export default function App(){
                     style={styles.likeText}
                     testID={`repository-likes-${repository.id}`}
                   >
-                  {`Curtidas ${repository.likes}`}
+                  {`${repository.likes}` > 1 ? `${repository.likes} curtidas` : `${repository.likes} curtida`}
                 </Text>
               </View>  
               <TouchableOpacity
